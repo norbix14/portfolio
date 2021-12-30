@@ -1,0 +1,14 @@
+/* general */
+.container {
+  max-width: 100%;
+  margin: 0 0;
+  padding: 0 0;
+}
+
+.d-none {
+  display: none;
+}
+
+.link-active {
+  border-bottom: 2px solid green;
+}

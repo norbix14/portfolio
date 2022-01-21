@@ -123,6 +123,38 @@ export const projectsInfo = () => {
         site: 'https://simple-mern-crud-react.netlify.app',
         github: 'https://github.com/norbix14/merncliente',
       },
+      {
+        id: 4,
+        src: '/img/projects/project-patients-control.png',
+        alt: 'project',
+        title: 'Patients control',
+        project: {
+          description: 'Control de pacientes en una veterinaria',
+          title: 'Patients control',
+          stack: ['react', 'node', 'localStorage', 'tailwindcss'],
+        },
+        site: 'https://github.com/norbix14/react-patients-control',
+        github: 'https://github.com/norbix14/react-patients-control',
+      },
+      {
+        id: 5,
+        src: '/img/projects/project-expenses-control.png',
+        alt: 'project',
+        title: 'Expenses control',
+        project: {
+          description: 'Control de gastos',
+          title: 'Expenses control',
+          stack: [
+            'react',
+            'node',
+            'localStorage',
+            'reactSwipeableList',
+            'reactCircularProgressbar',
+          ],
+        },
+        site: 'https://react-expenses-control.netlify.app',
+        github: 'https://github.com/norbix14/react-expenses-control',
+      },
     ],
     vanilla: [
       {
@@ -232,6 +264,19 @@ export const projectsInfo = () => {
         },
         site: 'https://github.com/norbix14/bootcamp-react-s03-netflix-clone',
         github: 'https://github.com/norbix14/bootcamp-react-s03-netflix-clone',
+      },
+      {
+        id: 9,
+        src: '/img/projects/project-forniture-ecommerce.png',
+        alt: 'project',
+        title: 'Forniture E-commerce',
+        project: {
+          description: 'Tienda de muebles',
+          title: 'Forniture E-commerce',
+          stack: ['html', 'css', 'javascript'],
+        },
+        site: 'https://forniture-ecommerce.netlify.app',
+        github: 'https://github.com/norbix14/css-forniture-ecommerce',
       },
     ],
   };

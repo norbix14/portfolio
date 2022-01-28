@@ -9,23 +9,36 @@ function ProjectInfo({ data }) {
   return (
     <div className="project-box">
       <div className="img-project-container" onClick={handleImgClick}>
-        <img src={src} alt={alt} className="img-project" title={title} />
+        <img
+          loading="lazy"
+          className="img-project"
+          src={src}
+          alt={alt}
+          title={title}
+        />
       </div>
       <div className="project-body">
         <h3>{title}</h3>
         <p>{project.description}</p>
         <div className="project-links">
           <div className="link-container">
-            <a className="link" href={site} target={'_blank'} rel="noreferrer">
+            <a
+              className="link"
+              rel="noreferrer"
+              title="Ver el sitio en Netlify"
+              target={'_blank'}
+              href={site}
+            >
               Sitio
             </a>
           </div>
           <div className="link-container">
             <a
               className="link"
-              href={github}
-              target={'_blank'}
               rel="noreferrer"
+              title="Ver código fuente en Github"
+              target={'_blank'}
+              href={github}
             >
               Proyecto
             </a>

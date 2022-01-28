@@ -13,7 +13,7 @@ function Navbar() {
     setDropdownActive((prevState) => !prevState);
     setHiddenDropdown('');
     if (!barsactive) {
-      setTimeout(() => {
+      window.setTimeout(() => {
         setHiddenDropdown('d-none');
       }, 500);
     }
@@ -38,7 +38,6 @@ function Navbar() {
           </ul>
           <div className="session-actions"></div>
         </div>
-        {/* <!-- HAMBURGER --> */}
         <div
           className="hamburger"
           id="hamburger"
@@ -54,7 +53,6 @@ function Navbar() {
           ></i>
         </div>
       </nav>
-      {/* <!-- DROPDOWN --> */}
       <div
         className={`dropdown-navigation-links ${
           !dropdownactive ? 'hideitem ' + hiddendropdown : 'showitem'

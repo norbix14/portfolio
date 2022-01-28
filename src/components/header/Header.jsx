@@ -4,12 +4,19 @@ import { imagesCarrouselCode } from '../../mocks/images-carrousel';
 function Header() {
   const [index, setIndex] = useState(0);
   const [fade, setFade] = useState(false);
+
+  let timerTimeout, timerInterval;
+  const interval = window.setInterval;
+  const timeout = window.setTimeout;
+  const clearInter = window.clearInterval;
+  const clearTime = window.clearTimeout;
+
   const images = imagesCarrouselCode();
   const imagesLen = images.length - 1;
 
   const handlePrevImage = () => {
     setFade(true);
-    window.setTimeout(() => setFade(false), 500);
+    timeout(() => setFade(false), 500);
     if (index === 0) {
       setIndex(imagesLen);
     } else {
@@ -19,7 +26,7 @@ function Header() {
 
   const handleNextImage = () => {
     setFade(true);
-    window.setTimeout(() => setFade(false), 500);
+    timeout(() => setFade(false), 500);
     if (index === imagesLen) {
       setIndex(0);
     } else {
@@ -28,7 +35,7 @@ function Header() {
   };
 
   useEffect(() => {
-    const timerInterval = window.setInterval(() => {
+    timerInterval = interval(() => {
       setFade(true);
       if (index === imagesLen) {
         setIndex(0);
@@ -36,10 +43,10 @@ function Header() {
         setIndex((prevState) => prevState + 1);
       }
     }, 5000);
-    const timerTimeout = window.setTimeout(() => setFade(false), 1000);
+    timerTimeout = timeout(() => setFade(false), 1000);
     return () => {
-      clearInterval(timerInterval);
-      clearTimeout(timerTimeout);
+      clearInter(timerInterval);
+      clearTime(timerTimeout);
     };
   }, [imagesLen, index]);
 
@@ -57,6 +64,7 @@ function Header() {
         <div className="slideshow-container">
           <div className={`my-slides ${fade ? 'slider-fade' : ''}`}>
             <img
+              loading="lazy"
               className="img-carrousel"
               src={images[index].src}
               alt={images[index].alt}

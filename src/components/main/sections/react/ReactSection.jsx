@@ -3,7 +3,6 @@ import { projectsInfo } from '../../../../mocks/projects-info';
 
 function ReactSection() {
   const { react: projects } = projectsInfo();
-
   return (
     <div className="projects-container">
       <h2>Proyectos en React</h2>

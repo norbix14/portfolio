@@ -1,14 +1,23 @@
 /* general */
 .container {
   max-width: 100%;
-  margin: 0 0;
-  padding: 0 0;
+  margin: 0;
+  padding: 0;
 }
 
 .d-none {
   display: none;
 }
 
-.link-active {
-  border-bottom: 2px solid green;
+/* swal popup */
+.swal2-popup {
+  background: rgb(0 0 0 / 1) !important;
+  color: #fff !important;
+  font-size: 2rem !important;
+}
+
+.swal2-success-circular-line-left,
+.swal2-success-circular-line-right,
+.swal2-success-fix {
+  background-color: transparent !important;
 }

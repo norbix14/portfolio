@@ -6,7 +6,7 @@ function ReactSection() {
   return (
     <div className="projects-container">
       <h2>Proyectos en React</h2>
-      <div className="projects-react">
+      <div className="projects-grid projects-react">
         {projects.map((project) => (
           <ProjectInfo key={project.id} data={project} />
         ))}

@@ -6,7 +6,7 @@ function NodeSection() {
   return (
     <div className="projects-container">
       <h2>Proyectos en Node</h2>
-      <div className="projects-node">
+      <div className="projects-grid projects-node">
         {projects.map((project) => (
           <ProjectInfo key={project.id} data={project} />
         ))}

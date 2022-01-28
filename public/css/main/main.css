@@ -13,19 +13,15 @@
   margin-bottom: 2rem;
 }
 
-.projects-node,
-.projects-react,
-.projects-vanilla {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   gap: 2rem;
   padding: 1rem;
 }
 
 .project-box {
-  width: 35rem;
+  width: 30rem;
   min-height: 40rem;
   border-radius: 0.8rem;
   overflow: hidden;
@@ -33,6 +29,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin: 0 auto;
 }
 
 .img-project-container,
@@ -62,9 +59,8 @@
 
 .project-body {
   display: flex;
-  justify-content: space-between;
   flex-direction: column;
-  align-items: center;
+  justify-content: space-between;
   padding: 1rem 0;
 }
 
@@ -96,5 +92,4 @@
 
 .link:hover {
   color: var(--white);
-  transform: scale(1.14);
 }

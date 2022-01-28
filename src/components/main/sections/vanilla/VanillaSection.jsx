@@ -6,7 +6,7 @@ function VanillaSection() {
   return (
     <div className="projects-container">
       <h2>Proyectos en HTML, CSS Y JavaScript Vanilla</h2>
-      <div className="projects-vanilla">
+      <div className=" projects-grid projects-vanilla">
         {projects.map((project) => (
           <ProjectInfo key={project.id} data={project} />
         ))}

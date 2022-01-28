@@ -54,12 +54,8 @@
   border-radius: 0 0.3rem 0.3rem 0;
   user-select: none;
   background-color: transparent;
-}
-
-.btn-slider-prev,
-.btn-slider-next {
   width: auto;
-  margin-top: -2.2rem;
+  margin-top: -3rem;
   top: 50%;
 }
 
@@ -141,9 +137,8 @@
   }
   .code-project-info {
     display: flex;
-    justify-content: center;
     flex-direction: column;
-    align-items: center;
+    justify-content: center;
   }
 }
 

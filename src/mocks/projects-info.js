@@ -10,7 +10,13 @@ export const projectsInfo = () => {
     node: [
       {
         id: 1,
-        src: '/img/projects/project-devjobs.png',
+        src: {
+          root: '/img/projects/node',
+          avif: 'project-devjobs.avif',
+          jpg: null,
+          png: 'project-devjobs.png',
+          webp: 'project-devjobs.webp',
+        },
         alt: 'project',
         title: 'devJobs',
         project: {
@@ -37,7 +43,13 @@ export const projectsInfo = () => {
       },
       {
         id: 2,
-        src: '/img/projects/project-crmapi.png',
+        src: {
+          root: '/img/projects/node',
+          avif: 'project-crmapi.avif',
+          jpg: null,
+          png: 'project-crmapi.png',
+          webp: 'project-crmapi.webp',
+        },
         alt: 'project',
         title: 'CRM API',
         project: {
@@ -61,7 +73,13 @@ export const projectsInfo = () => {
       },
       {
         id: 3,
-        src: '/img/projects/project-mernapi.png',
+        src: {
+          root: '/img/projects/node',
+          avif: 'project-mernapi.avif',
+          jpg: null,
+          png: 'project-mernapi.png',
+          webp: 'project-mernapi.webp',
+        },
         alt: 'project',
         title: 'MERN API',
         project: {
@@ -85,7 +103,13 @@ export const projectsInfo = () => {
     react: [
       {
         id: 1,
-        src: '/img/projects/project-starwars.png',
+        src: {
+          root: '/img/projects/react',
+          avif: 'project-starwars.avif',
+          jpg: null,
+          png: 'project-starwars.png',
+          webp: 'project-starwars.webp',
+        },
         alt: 'project',
         title: 'Star Wars Community',
         project: {
@@ -99,7 +123,13 @@ export const projectsInfo = () => {
       },
       {
         id: 2,
-        src: '/img/projects/project-crm.png',
+        src: {
+          root: '/img/projects/react',
+          avif: 'project-crm.avif',
+          jpg: null,
+          png: 'project-crm.png',
+          webp: 'project-crm.webp',
+        },
         alt: 'project',
         title: 'CRM Frontend',
         project: {
@@ -112,7 +142,13 @@ export const projectsInfo = () => {
       },
       {
         id: 3,
-        src: '/img/projects/project-mern.png',
+        src: {
+          root: '/img/projects/react',
+          avif: 'project-mern.avif',
+          jpg: null,
+          png: 'project-mern.png',
+          webp: 'project-mern.webp',
+        },
         alt: 'project',
         title: 'MERN Frontend',
         project: {
@@ -125,7 +161,13 @@ export const projectsInfo = () => {
       },
       {
         id: 4,
-        src: '/img/projects/project-patients-control.png',
+        src: {
+          root: '/img/projects/react',
+          avif: 'project-patients-control.avif',
+          jpg: null,
+          png: 'project-patients-control.png',
+          webp: 'project-patients-control.webp',
+        },
         alt: 'project',
         title: 'Patients control',
         project: {
@@ -138,7 +180,13 @@ export const projectsInfo = () => {
       },
       {
         id: 5,
-        src: '/img/projects/project-expenses-control.png',
+        src: {
+          root: '/img/projects/react',
+          avif: 'project-expenses-control.avif',
+          jpg: null,
+          png: 'project-expenses-control.png',
+          webp: 'project-expenses-control.webp',
+        },
         alt: 'project',
         title: 'Expenses control',
         project: {
@@ -159,7 +207,13 @@ export const projectsInfo = () => {
     vanilla: [
       {
         id: 1,
-        src: '/img/projects/project-space-tourism.png',
+        src: {
+          root: '/img/projects/vanilla',
+          avif: 'project-space-tourism.avif',
+          jpg: null,
+          png: 'project-space-tourism.png',
+          webp: 'project-space-tourism.webp',
+        },
         alt: 'project',
         title: 'Space Tourism',
         project: {
@@ -172,7 +226,13 @@ export const projectsInfo = () => {
       },
       {
         id: 2,
-        src: '/img/projects/project-trello.png',
+        src: {
+          root: '/img/projects/vanilla',
+          avif: 'project-trello.avif',
+          jpg: null,
+          png: 'project-trello.png',
+          webp: 'project-trello.webp',
+        },
         alt: 'project',
         title: 'Trello Clone',
         project: {
@@ -185,7 +245,13 @@ export const projectsInfo = () => {
       },
       {
         id: 3,
-        src: '/img/projects/project-mercado-libre.png',
+        src: {
+          root: '/img/projects/vanilla',
+          avif: 'project-mercado-libre.avif',
+          jpg: null,
+          png: 'project-mercado-libre.png',
+          webp: 'project-mercado-libre.webp',
+        },
         alt: 'project',
         title: 'Mercado Libre Clone',
         project: {
@@ -200,7 +266,13 @@ export const projectsInfo = () => {
       },
       {
         id: 4,
-        src: '/img/projects/project-landing-page.png',
+        src: {
+          root: '/img/projects/vanilla',
+          avif: 'project-landing-page.avif',
+          jpg: null,
+          png: 'project-landing-page.png',
+          webp: 'project-landing-page.webp',
+        },
         alt: 'project',
         title: 'Landing Page',
         project: {
@@ -213,7 +285,13 @@ export const projectsInfo = () => {
       },
       {
         id: 5,
-        src: '/img/projects/project-movie-gallery.png',
+        src: {
+          root: '/img/projects/vanilla',
+          avif: 'project-movie-gallery.avif',
+          jpg: null,
+          png: 'project-movie-gallery.png',
+          webp: 'project-movie-gallery.webp',
+        },
         alt: 'project',
         title: 'Movie Gallery',
         project: {
@@ -227,7 +305,13 @@ export const projectsInfo = () => {
       },
       {
         id: 6,
-        src: '/img/projects/project-starbucks.png',
+        src: {
+          root: '/img/projects/vanilla',
+          avif: 'project-starbucks.avif',
+          jpg: null,
+          png: 'project-starbucks.png',
+          webp: 'project-starbucks.webp',
+        },
         alt: 'project',
         title: 'Starbucks Clone',
         project: {
@@ -241,7 +325,13 @@ export const projectsInfo = () => {
       },
       {
         id: 7,
-        src: '/img/projects/project-shopify.png',
+        src: {
+          root: '/img/projects/vanilla',
+          avif: 'project-shopify.avif',
+          jpg: null,
+          png: 'project-shopify.png',
+          webp: 'project-shopify.webp',
+        },
         alt: 'project',
         title: 'Shopify Clone',
         project: {
@@ -254,7 +344,13 @@ export const projectsInfo = () => {
       },
       {
         id: 8,
-        src: '/img/projects/project-netflix.png',
+        src: {
+          root: '/img/projects/vanilla',
+          avif: 'project-netflix.avif',
+          jpg: null,
+          png: 'project-netflix.png',
+          webp: 'project-netflix.webp',
+        },
         alt: 'project',
         title: 'Netflix Clone',
         project: {
@@ -267,7 +363,13 @@ export const projectsInfo = () => {
       },
       {
         id: 9,
-        src: '/img/projects/project-forniture-ecommerce.png',
+        src: {
+          root: '/img/projects/vanilla',
+          avif: 'project-forniture-ecommerce.avif',
+          jpg: null,
+          png: 'project-forniture-ecommerce.png',
+          webp: 'project-forniture-ecommerce.webp',
+        },
         alt: 'project',
         title: 'Forniture E-commerce',
         project: {
@@ -280,7 +382,13 @@ export const projectsInfo = () => {
       },
       {
         id: 10,
-        src: '/img/projects/project-architecture.png',
+        src: {
+          root: '/img/projects/vanilla',
+          avif: 'project-architecture.avif',
+          jpg: null,
+          png: 'project-architecture.png',
+          webp: 'project-architecture.webp',
+        },
         alt: 'project',
         title: 'Architecture',
         project: {
@@ -293,7 +401,13 @@ export const projectsInfo = () => {
       },
       {
         id: 11,
-        src: '/img/projects/project-techpro.png',
+        src: {
+          root: '/img/projects/vanilla',
+          avif: 'project-techpro.avif',
+          jpg: null,
+          png: 'project-techpro.png',
+          webp: 'project-techpro.webp',
+        },
         alt: 'project',
         title: 'TechPRO',
         project: {
@@ -306,7 +420,13 @@ export const projectsInfo = () => {
       },
       {
         id: 12,
-        src: '/img/projects/project-nucleus.png',
+        src: {
+          root: '/img/projects/vanilla',
+          avif: 'project-nucleus.avif',
+          jpg: null,
+          png: 'project-nucleus.png',
+          webp: 'project-nucleus.webp',
+        },
         alt: 'project',
         title: 'Nucleus wallet',
         project: {
@@ -316,6 +436,25 @@ export const projectsInfo = () => {
         },
         site: 'https://github.com/norbix14/css-nucleus',
         github: 'https://github.com/norbix14/css-nucleus',
+      },
+      {
+        id: 13,
+        src: {
+          root: '/img/projects/vanilla',
+          avif: 'project-coffeeshop.avif',
+          jpg: null,
+          png: 'project-coffeeshop.png',
+          webp: 'project-coffeeshop.webp',
+        },
+        alt: 'project',
+        title: 'Coffee Shop',
+        project: {
+          description: 'Landing page para una cafetería',
+          title: 'Coffee Shop',
+          stack: ['html', 'css', 'javascript', 'node', 'gulp'],
+        },
+        site: 'https://css-coffee-shop.netlify.app',
+        github: 'https://github.com/norbix14/css-coffeeshop',
       },
     ],
   };

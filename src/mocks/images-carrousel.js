@@ -7,7 +7,14 @@
 export const imagesCarrouselCode = () => {
   return [
     {
-      src: '/img/source/source-starwars.png',
+      id: 1,
+      src: {
+        root: '/img/source',
+        avif: 'source-starwars.avif',
+        jpg: null,
+        png: 'source-starwars.png',
+        webp: 'source-starwars.webp',
+      },
       alt: 'source code',
       title: 'Source code Star Wars Community',
       project: {
@@ -19,7 +26,14 @@ export const imagesCarrouselCode = () => {
         'https://github.com/norbix14/bootcamp-react-final-project-starwars',
     },
     {
-      src: '/img/source/source-crm.png',
+      id: 2,
+      src: {
+        root: '/img/source',
+        avif: 'source-crm.avif',
+        jpg: null,
+        png: 'source-crm.png',
+        webp: 'source-crm.webp',
+      },
       alt: 'source code',
       title: 'Source code CRM',
       project: {
@@ -30,7 +44,14 @@ export const imagesCarrouselCode = () => {
       github: 'https://github.com/norbix14/crmapi',
     },
     {
-      src: '/img/source/source-mern.png',
+      id: 3,
+      src: {
+        root: '/img/source',
+        avif: 'source-mern.avif',
+        jpg: null,
+        png: 'source-mern.png',
+        webp: 'source-mern.webp',
+      },
       alt: 'source code',
       title: 'Source code MERN',
       project: {
@@ -41,9 +62,16 @@ export const imagesCarrouselCode = () => {
       github: 'https://github.com/norbix14/mernapi',
     },
     {
-      src: '/img/source/source-devjobs.png',
-      alt: 'source code devJobs',
-      title: 'Source code',
+      id: 4,
+      src: {
+        root: '/img/source',
+        avif: 'source-devjobs.avif',
+        jpg: null,
+        png: 'source-devjobs.png',
+        webp: 'source-devjobs.webp',
+      },
+      alt: 'source code',
+      title: 'Source code devJobs',
       project: {
         text: 'Proyecto para publicar empleos IT',
         name: 'devJobs',

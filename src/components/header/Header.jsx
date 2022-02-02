@@ -63,12 +63,25 @@ function Header() {
         </div>
         <div className="slideshow-container">
           <div className={`my-slides ${fade ? 'slider-fade' : ''}`}>
-            <img
-              loading="lazy"
-              className="img-carrousel"
-              src={images[index].src}
-              alt={images[index].alt}
-            />
+            <picture>
+              <source
+                srcSet={`${images[index].src.root}/${images[index].src.avif}`}
+                type="image/avif"
+              />
+              <source
+                srcSet={`${images[index].src.root}/${images[index].src.webp}`}
+                type="image/webp"
+              />
+              <img
+                loading="lazy"
+                className="img-carrousel"
+                width="500"
+                height="300"
+                src={`${images[index].src.root}/${images[index].src.png}`}
+                title={images[index].title}
+                alt={images[index].alt}
+              />
+            </picture>
           </div>
           <button className="btn-slider-prev" onClick={handlePrevImage}>
             &#10094;

@@ -3,19 +3,27 @@ import { SwalModal } from '../../../helpers/SweetAlert';
 
 function ProjectInfo({ data }) {
   const { src, alt, title, project, site, github } = data;
+  const { root, avif, jpg, png, webp } = src;
+  const defaultSrc = jpg ?? png;
   const handleImgClick = () => {
     SwalModal({ title: 'Stack utilizado', stack: project.stack });
   };
   return (
     <div className="project-box">
       <div className="img-project-container" onClick={handleImgClick}>
-        <img
-          loading="lazy"
-          className="img-project"
-          src={src}
-          alt={alt}
-          title={title}
-        />
+        <picture>
+          <source srcSet={`${root}/${avif}`} type="image/avif" />
+          <source srcSet={`${root}/${webp}`} type="image/webp" />
+          <img
+            loading="lazy"
+            className="img-project"
+            width="500"
+            height="300"
+            src={`${root}/${defaultSrc}`}
+            alt={alt}
+            title={title}
+          />
+        </picture>
       </div>
       <div className="project-body">
         <h3>{title}</h3>

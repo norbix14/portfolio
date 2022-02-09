@@ -7,6 +7,7 @@
 export const networksInfo = () => {
   return [
     {
+      id: 1,
       page: 'github',
       link: 'https://github.com/norbix14',
       description: 'perfil de',
@@ -14,6 +15,7 @@ export const networksInfo = () => {
       icon: 'fa-github',
     },
     {
+      id: 2,
       page: 'docker hub',
       link: 'https://hub.docker.com/u/norbertofabrizio',
       description: 'perfil de',
@@ -21,6 +23,7 @@ export const networksInfo = () => {
       icon: 'fa-docker',
     },
     {
+      id: 3,
       page: 'linkedin',
       link: 'https://www.linkedin.com/in/norberto-fabrizio-89a20488/',
       description: 'perfil de',

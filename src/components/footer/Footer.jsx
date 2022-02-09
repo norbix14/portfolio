@@ -7,13 +7,13 @@ function Footer() {
       <h2>Mis redes</h2>
       <div className="container-contact">
         <div className="container-social-networks">
-          {networks.map((net, i) => (
+          {networks.map((net) => (
             <a
-              key={i}
               className="social-network-link"
-              href={net.link}
-              target={'_blank'}
               rel="noreferrer"
+              target={'_blank'}
+              key={net.id}
+              href={net.link}
               title={`${net.description} ${net.page}: ${net.owner}`}
             >
               <i className={`fab ${net.icon} fa-3x`}></i>

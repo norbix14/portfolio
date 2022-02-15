@@ -11,8 +11,12 @@ function ProjectInfo({ data }) {
   const defaultSrc = jpg ?? png;
 
   const { heroku, netlify, github } = links;
+
   const website = heroku || netlify || '#';
+  const sourceCode = github || '#';
+
   const isValidSite = website !== '#';
+  const isValidSourceCode = sourceCode !== '#';
 
   const { group, members } = team;
 
@@ -29,8 +33,6 @@ function ProjectInfo({ data }) {
           <img
             loading="lazy"
             className="img-project"
-            width="500"
-            height="300"
             src={`${root}/${defaultSrc}`}
             alt={alt}
             title={title}
@@ -41,9 +43,9 @@ function ProjectInfo({ data }) {
         <h3>{name}</h3>
         <p>{description}</p>
         {group ? (
-          <p>Trabajo en equipo de {members} miembros</p>
+          <p>Proyecto en equipo de {members} personas</p>
         ) : (
-          <p>Trabajo individual</p>
+          <p>Proyecto individual</p>
         )}
         <div className="project-links">
           <div className="link-container">
@@ -68,15 +70,25 @@ function ProjectInfo({ data }) {
             )}
           </div>
           <div className="link-container">
-            <a
-              className="link"
-              rel="noreferrer"
-              title="Ver código fuente en Github"
-              target={'_blank'}
-              href={github}
-            >
-              código
-            </a>
+            {isValidSourceCode ? (
+              <a
+                className="link"
+                rel="noreferrer"
+                title="Ver código fuente en Github"
+                target={'_blank'}
+                href={sourceCode}
+              >
+                código
+              </a>
+            ) : (
+              <button
+                className="btn-invalid link"
+                title="Código fuente no disponible"
+                disabled
+              >
+                código
+              </button>
+            )}
           </div>
         </div>
       </div>

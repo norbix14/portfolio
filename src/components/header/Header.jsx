@@ -1,9 +1,16 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { imagesCarrouselCode } from '../../mocks/images-carrousel';
 
 function Header() {
+  const initialStateProjects = useMemo(() => imagesCarrouselCode(), []);
+  const projectsLength = useMemo(
+    () => initialStateProjects.length - 1,
+    [initialStateProjects]
+  );
+
   const [index, setIndex] = useState(0);
   const [fade, setFade] = useState(false);
+  const [imgdata, setImgData] = useState(initialStateProjects[0]);
 
   let timerTimeout, timerInterval;
   const interval = window.setInterval;
@@ -11,14 +18,19 @@ function Header() {
   const clearInter = window.clearInterval;
   const clearTime = window.clearTimeout;
 
-  const images = imagesCarrouselCode();
-  const imagesLen = images.length - 1;
+  const { project } = imgdata;
+
+  const { description, name, image } = project;
+
+  const { src, alt, title } = image;
+  const { root, avif, jpg, png, webp } = src;
+  const defaultSrc = jpg ?? png;
 
   const handlePrevImage = () => {
     setFade(true);
     timeout(() => setFade(false), 500);
     if (index === 0) {
-      setIndex(imagesLen);
+      setIndex(projectsLength);
     } else {
       setIndex((prevState) => prevState - 1);
     }
@@ -27,7 +39,7 @@ function Header() {
   const handleNextImage = () => {
     setFade(true);
     timeout(() => setFade(false), 500);
-    if (index === imagesLen) {
+    if (index === projectsLength) {
       setIndex(0);
     } else {
       setIndex((prevState) => prevState + 1);
@@ -35,9 +47,10 @@ function Header() {
   };
 
   useEffect(() => {
+    setImgData(initialStateProjects[index]);
     timerInterval = interval(() => {
       setFade(true);
-      if (index === imagesLen) {
+      if (index === projectsLength) {
         setIndex(0);
       } else {
         setIndex((prevState) => prevState + 1);
@@ -48,38 +61,26 @@ function Header() {
       clearInter(timerInterval);
       clearTime(timerTimeout);
     };
-  }, [imagesLen, index]);
+  }, [projectsLength, index]);
 
   return (
     <section className="carrousel-slider">
       <div className="carrousel-container">
         <div className="code-project-info">
-          <h3 className="code-project-description">
-            {images[index].project.text}
-          </h3>
-          <span className="code-project-name">
-            {images[index].project.name}
-          </span>
+          <h3 className="code-project-description">{description}</h3>
+          <span className="code-project-name">{name}</span>
         </div>
         <div className="slideshow-container">
           <div className={`my-slides ${fade ? 'slider-fade' : ''}`}>
             <picture>
-              <source
-                srcSet={`${images[index].src.root}/${images[index].src.avif}`}
-                type="image/avif"
-              />
-              <source
-                srcSet={`${images[index].src.root}/${images[index].src.webp}`}
-                type="image/webp"
-              />
+              <source srcSet={`${root}/${avif}`} type="image/avif" />
+              <source srcSet={`${root}/${webp}`} type="image/webp" />
               <img
                 loading="lazy"
                 className="img-carrousel"
-                width="500"
-                height="300"
-                src={`${images[index].src.root}/${images[index].src.png}`}
-                title={images[index].title}
-                alt={images[index].alt}
+                src={`${root}/${defaultSrc}`}
+                title={title}
+                alt={alt}
               />
             </picture>
           </div>

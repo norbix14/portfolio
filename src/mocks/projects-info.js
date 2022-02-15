@@ -222,7 +222,7 @@ export const projectsInfo = () => {
         project: {
           description: 'Control de pacientes en una veterinaria',
           name: 'Patients control',
-          stack: ['react', 'node', 'localStorage', 'tailwindcss'],
+          stack: ['react', 'node', 'local storage', 'tailwind css'],
           team: {
             group: false,
             individual: true,
@@ -254,9 +254,9 @@ export const projectsInfo = () => {
           stack: [
             'react',
             'node',
-            'localStorage',
-            'reactSwipeableList',
-            'reactCircularProgressbar',
+            'local storage',
+            'react swipeable list',
+            'react circular progressbar',
           ],
           team: {
             group: false,
@@ -316,8 +316,8 @@ export const projectsInfo = () => {
       {
         id: 2,
         project: {
-          description: 'Maquetado de la página inicial de Trello',
-          name: 'Trello Clone',
+          description: 'Maquetación de la página de inicio de Trello',
+          name: 'Trello',
           stack: ['html', 'css'],
           team: {
             group: false,
@@ -333,7 +333,7 @@ export const projectsInfo = () => {
               webp: 'project-trello.webp',
             },
             alt: 'project',
-            title: 'Trello Clone',
+            title: 'Trello',
           },
           links: {
             heroku: null,
@@ -347,8 +347,8 @@ export const projectsInfo = () => {
         id: 3,
         project: {
           description:
-            'Maquetación de la página inicial de Mercado Libre Argentina',
-          name: 'Mercado Libre Clone',
+            'Maquetación de la página de inicio de Mercado Libre Argentina',
+          name: 'Mercado Libre',
           stack: ['html', 'css'],
           team: {
             group: true,
@@ -364,7 +364,7 @@ export const projectsInfo = () => {
               webp: 'project-mercado-libre.webp',
             },
             alt: 'project',
-            title: 'Mercado Libre Clone',
+            title: 'Mercado Libre',
           },
           links: {
             heroku: null,
@@ -437,8 +437,8 @@ export const projectsInfo = () => {
       {
         id: 6,
         project: {
-          description: 'Maquetación de la página inicial de Starbucks',
-          name: 'Starbucks Clone',
+          description: 'Maquetación de la página de inicio de Starbucks',
+          name: 'Starbucks',
           stack: ['html', 'css'],
           team: {
             group: false,
@@ -454,7 +454,7 @@ export const projectsInfo = () => {
               webp: 'project-starbucks.webp',
             },
             alt: 'project',
-            title: 'Starbucks Clone',
+            title: 'Starbucks',
           },
           links: {
             heroku: null,
@@ -467,8 +467,8 @@ export const projectsInfo = () => {
       {
         id: 7,
         project: {
-          description: 'Maquetación de la página inicial de Shopify',
-          name: 'Shopify Clone',
+          description: 'Maquetación de la página de inicio de Shopify',
+          name: 'Shopify',
           stack: ['html', 'css'],
           team: {
             group: false,
@@ -484,7 +484,7 @@ export const projectsInfo = () => {
               webp: 'project-shopify.webp',
             },
             alt: 'project',
-            title: 'Shopify Clone',
+            title: 'Shopify',
           },
           links: {
             heroku: null,
@@ -498,7 +498,7 @@ export const projectsInfo = () => {
         id: 8,
         project: {
           description: 'Maquetación de la página de inicio de Netflix',
-          name: 'Netflix Clone',
+          name: 'Netflix',
           stack: ['html', 'css'],
           team: {
             group: true,
@@ -514,7 +514,7 @@ export const projectsInfo = () => {
               webp: 'project-netflix.webp',
             },
             alt: 'project',
-            title: 'Netflix Clone',
+            title: 'Netflix',
           },
           links: {
             heroku: null,
@@ -645,7 +645,7 @@ export const projectsInfo = () => {
         project: {
           description: 'Landing page para una cafetería',
           name: 'Coffee Shop',
-          stack: ['html', 'css', 'javascript', 'node', 'gulp'],
+          stack: ['html', 'sass', 'javascript', 'node', 'gulp'],
           team: {
             group: false,
             individual: true,
@@ -674,7 +674,7 @@ export const projectsInfo = () => {
         project: {
           description: 'Landing page para una aplicación de delivery',
           name: 'Delivery App',
-          stack: ['html', 'css', 'javascript', 'node', 'gulp', 'bem'],
+          stack: ['html', 'sass', 'javascript', 'node', 'gulp', 'bem'],
           team: {
             group: false,
             individual: true,
@@ -703,7 +703,7 @@ export const projectsInfo = () => {
         project: {
           description: 'Landing page para una aplicación de podcasts',
           name: 'Podcast FM',
-          stack: ['html', 'css', 'javascript', 'node', 'gulp'],
+          stack: ['html', 'sass', 'javascript', 'node', 'gulp'],
           team: {
             group: false,
             individual: true,
@@ -724,6 +724,101 @@ export const projectsInfo = () => {
             heroku: null,
             netlify: null,
             github: 'https://github.com/norbix14/css-podcast-fm',
+          },
+        },
+      },
+      {
+        id: 16,
+        project: {
+          description: 'Clon de la página de inicio de Airbnb',
+          name: 'Airbnb',
+          stack: ['html', 'sass', 'javascript', 'node', 'gulp', 'bem'],
+          team: {
+            group: false,
+            individual: true,
+            members: 0,
+          },
+          image: {
+            src: {
+              root: '/img/projects/vanilla',
+              avif: 'project-airbnb-clone.avif',
+              jpg: null,
+              png: 'project-airbnb-clone.png',
+              webp: 'project-airbnb-clone.webp',
+            },
+            alt: 'project',
+            title: 'Airbnb',
+          },
+          links: {
+            heroku: null,
+            netlify: null,
+            github: 'https://github.com/norbix14/css-airbnb-clone',
+          },
+        },
+      },
+      {
+        id: 17,
+        project: {
+          description: 'Landing page para una empresa de bienes raíces',
+          name: 'Real State',
+          stack: ['html', 'sass', 'javascript', 'node', 'gulp', 'bem'],
+          team: {
+            group: false,
+            individual: true,
+            members: 0,
+          },
+          image: {
+            src: {
+              root: '/img/projects/vanilla',
+              avif: 'project-real-state.avif',
+              jpg: null,
+              png: 'project-real-state.png',
+              webp: 'project-real-state.webp',
+            },
+            alt: 'project',
+            title: 'Real State',
+          },
+          links: {
+            heroku: null,
+            netlify: null,
+            github: 'https://github.com/norbix14/css-real-state',
+          },
+        },
+      },
+      {
+        id: 18,
+        project: {
+          description: 'Landing page para un salón de belleza y spa',
+          name: 'Carolina Spa',
+          stack: [
+            'html',
+            'sass',
+            'javascript',
+            'node',
+            'gulp',
+            'bem',
+            'swiper js',
+          ],
+          team: {
+            group: false,
+            individual: true,
+            members: 0,
+          },
+          image: {
+            src: {
+              root: '/img/projects/vanilla',
+              avif: 'project-carolina-spa.avif',
+              jpg: null,
+              png: 'project-carolina-spa.png',
+              webp: 'project-carolina-spa.webp',
+            },
+            alt: 'project',
+            title: 'Carolina Spa',
+          },
+          links: {
+            heroku: null,
+            netlify: null,
+            github: 'https://github.com/norbix14/css-carolina-spa',
           },
         },
       },

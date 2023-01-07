@@ -23,8 +23,8 @@ export const projectsInfo = () => {
             src: {
               root: '/img/projects/nest',
               avif: 'project-car-dealership.avif',
-              jpg: null,
-              png: 'project-car-dealership.png',
+              jpg: 'project-car-dealership.jpg',
+              png: null,
               webp: 'project-car-dealership.webp',
             },
             alt: 'project',

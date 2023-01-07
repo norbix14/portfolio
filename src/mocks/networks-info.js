@@ -30,5 +30,13 @@ export const networksInfo = () => {
       owner: 'norberto fabrizio',
       icon: 'fa-linkedin-in',
     },
+    {
+      id: 4,
+      page: 'gitlab',
+      link: 'https://gitlab.com/norbix14',
+      description: 'perfil de',
+      owner: 'norberto fabrizio',
+      icon: 'fa-gitlab',
+    },
   ];
 };

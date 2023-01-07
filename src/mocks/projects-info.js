@@ -127,6 +127,49 @@ export const projectsInfo = () => {
           },
         },
       },
+      {
+        id: 4,
+        project: {
+          description: 'Crear proyectos y tareas',
+          name: 'Uptask',
+          stack: [
+            'node',
+            'express',
+            'mysql',
+            'sequelize',
+            'cors',
+            'passport',
+            'bcryptjs',
+            'pug',
+            'connectflash',
+            'nanoid',
+            'slug',
+            'sweetalert2',
+            'axios',
+          ],
+          team: {
+            group: false,
+            individual: true,
+            members: 0,
+          },
+          image: {
+            src: {
+              root: '/img/projects/node',
+              avif: 'project-uptask.avif',
+              jpg: null,
+              png: 'project-uptask.png',
+              webp: 'project-uptask.webp',
+            },
+            alt: 'project',
+            title: 'Uptask',
+          },
+          links: {
+            heroku: null,
+            netlify: null,
+            github: 'https://github.com/norbix14/uptasknode',
+          },
+        },
+      },
     ],
     react: [
       {

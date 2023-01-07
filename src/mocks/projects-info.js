@@ -7,6 +7,37 @@
  */
 export const projectsInfo = () => {
   return {
+    nest: [
+      {
+        id: 1,
+        project: {
+          description: 'Primeros pasos con NestJS con una API REST',
+          name: 'Car Dealership API',
+          stack: ['node', 'nest', 'typescript'],
+          team: {
+            group: false,
+            individual: true,
+            members: 0,
+          },
+          image: {
+            src: {
+              root: '/img/projects/nest',
+              avif: 'project-car-dealership.avif',
+              jpg: null,
+              png: 'project-car-dealership.png',
+              webp: 'project-car-dealership.webp',
+            },
+            alt: 'project',
+            title: 'Car Dealership API',
+          },
+          links: {
+            heroku: null,
+            netlify: null,
+            github: 'https://github.com/norbix14/nest-01-car-dealership',
+          },
+        },
+      },
+    ],
     node: [
       {
         id: 1,
